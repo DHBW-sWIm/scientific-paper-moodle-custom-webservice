@@ -1,0 +1,7 @@
+#  Sientific-Paper Moodle Custom Webservice
+------------------------------------------
+
+To test:
+1- Install the plugin in your moodle instance with the install file INSTALL.ZIP
+2- Read, setup and run moodle/local/wstemplate/client/client.php
+3- Run the moodle application that this webservice is designed for 
