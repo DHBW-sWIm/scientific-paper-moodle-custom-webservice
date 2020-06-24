@@ -55,6 +55,29 @@ class local_spsupman_external extends external_api {
             $retsupervisor['id'] = $supervisor->id;
             $retsupervisor['firstname'] = $supervisor->firstname;
             $retsupervisor['lastname'] = $supervisor->lastname;
+            $retsupervisor['title'] = $supervisor->title;
+            $retsupervisor['gender'] = $supervisor->gender;
+            $retsupervisor['birthdate'] = $supervisor->birthdate;
+
+            $retsupervisor['languages'] = $supervisor->languages;
+            $retsupervisor['company'] = $supervisor->company;
+            $retsupervisor['address'] = $supervisor->address;
+            $retsupervisor['city'] = $supervisor->city;
+            $retsupervisor['postalcode'] = $supervisor->postalcode;
+            $retsupervisor['phone'] = $supervisor->phone;
+
+            $retsupervisor['email'] = $supervisor->email;
+            $retsupervisor['iban'] = $supervisor->iban;
+            $retsupervisor['specialisation'] = $supervisor->specialisation;
+            $retsupervisor['topictype'] = $supervisor->topictype;
+            $retsupervisor['supportperiod'] = $supervisor->supportperiod;
+            $retsupervisor['bachelor'] = $supervisor->bachelor;
+
+            $retsupervisor['peryear'] = $supervisor->peryear;
+            $retsupervisor['atthesametime'] = $supervisor->atthesametime;
+            $retsupervisor['timecreated'] = $supervisor->timecreated;
+            $retsupervisor['timemodified'] = $supervisor->timemodified;    
+      
             $retsupervisors[] = $retsupervisor;
         }
 
@@ -74,8 +97,26 @@ class local_spsupman_external extends external_api {
                         'id' => new external_value(PARAM_INT, 'course id'),
                         'firstname' => new external_value(PARAM_TEXT, 'course short name'),
                         'lastname' => new external_value(PARAM_TEXT, 'category id'),
-                   
-            )
+                        'title' => new external_value(PARAM_TEXT, 'title'),
+                        'gender'=> new external_value(PARAM_TEXT, 'gender'),
+                        'birthdate' => new external_value(PARAM_TEXT, 'birthdate'),
+                        'languages' => new external_value(PARAM_TEXT, 'languages'),
+                        'company' => new external_value(PARAM_TEXT, 'company'),
+                        'address' => new external_value(PARAM_TEXT, 'address'),
+                        'city' => new external_value(PARAM_TEXT, 'city'),
+                        'postalcode' => new external_value(PARAM_INT, 'zip'),
+                        'phone' => new external_value(PARAM_ALPHANUM, 'phone'),
+                        'email' => new external_value(PARAM_TEXT, 'email'),
+                        'iban' => new external_value(PARAM_TEXT, 'iban'),
+                        'specialisation' => new external_value(PARAM_TEXT, 'specialisation'),
+                        'topictype' => new external_value(PARAM_TEXT, 'topictype'),
+                        'supportperiod' => new external_value(PARAM_TEXT, 'supportperiod'),
+                        'bachelor' => new external_value(PARAM_INT, 'bachelor'),
+                        'peryear' => new external_value(PARAM_INT, 'peryear'),
+                        'atthesametime' => new external_value(PARAM_INT, 'atthesametime'),
+                        'timecreated' => new external_value(PARAM_INT, 'timecreated'),
+                        'timemodified' => new external_value(PARAM_INT, 'timemodified')
+            )   
                     ));
     }
 
