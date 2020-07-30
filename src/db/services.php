@@ -36,6 +36,29 @@ $functions = array(
                 'classpath'   => 'local/spsupman/externallib.php',
                 'description' => 'Return Student has supervisor Relation',
                 'type'        => 'read',
+        ),
+        'local_spsupman_get_token_submissions' => array(
+                'classname'   => 'local_spsupman_external',
+                'methodname'  => 'get_token_submissions',
+                'classpath'   => 'local/spsupman/externallib.php',
+                'description' => 'Return Assign Submissions for specific Corporate Token',
+                'type'        => 'read',
+        )
+        ,
+        'local_spsupman_get_tokendata' => array(
+                'classname'   => 'local_spsupman_external',
+                'methodname'  => 'get_tokendata',
+                'classpath'   => 'local/spsupman/externallib.php',
+                'description' => 'Return Token Data for specific Corporate Token',
+                'type'        => 'read',
+        )
+        ,
+        'local_spsupman_get_studenthascorpsupervisor' => array(
+                'classname'   => 'local_spsupman_external',
+                'methodname'  => 'get_studenthascorpsupervisor',
+                'classpath'   => 'local/spsupman/externallib.php',
+                'description' => 'Return Corporate Supervisor Data for User',
+                'type'        => 'read',
         )
 );
 
